@@ -1,0 +1,73 @@
+<html>
+  <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+
+
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+  </head>
+  <body>
+
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <h2 class="header-title">AI Realtime Detection</h2>
+      </nav>
+
+
+
+    
+
+    <!-- Add an image that we will use to test -->
+    <!-- <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>     -->
+    <!-- Load index.js after the content of the page -->    
+
+    <!-- Add webcam that will use to test -->
+
+    <div class="page-body">
+
+        <video class="video-view" autoplay playsinline muted id="webcam" style="width: 50%; height: 50%; box-align: center;"></video>
+
+        <br>
+
+        <button type="button" class="btn btn-primary" id="class-a">CLASS A</button>
+        <button type="button" class="btn btn-primary" id="class-b">CLASS B</button>
+        <button type="button" class="btn btn-primary" id="class-c">CLASS C</button>
+    
+        
+    
+        <div id = "result"></div>
+
+        <div id="console"></div>
+
+
+
+    </div>
+    
+
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>
+
+
+
+
+
+
